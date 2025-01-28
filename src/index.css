@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+  .ag-theme-alpine .ag-header {
+    background-color: rgb(249, 249, 249) !important; /* Lighter background */
+    color: #333 !important; /* Darker text color for better contrast */
+    font-weight: 600 !important; /* Bolder text */
+    text-align: center !important; /* Center-align text */
+    padding: 0 0px !important; /* Padding for spacing */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1) !important; /* Soft border for separation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important; /* Subtle shadow */
+    font-family: 'Arial', sans-serif !important; /* Premium font */
+}
+
+.ag-theme-alpine .ag-header-cell {
+    padding-left: 12px !important; /* Padding inside header cell */
+    padding-right: 12px !important; /* Padding inside header cell */
+    border-left: 1px solid rgba(0, 0, 0, 0.1) !important; /* Border between cells */
+}
+
+.ag-theme-alpine .ag-header-cell-label {
+    font-size: 14px !important; /* Slightly larger text */
+    font-family: 'Roboto', sans-serif !important; /* Premium font */
+}
+
+.ag-theme-alpine .ag-header-cell:hover {
+    background-color: #eaeaea !important; /* Hover effect */
+    cursor: pointer !important; /* Pointer cursor on hover */
+}
+
+.ag-theme-alpine .ag-header-cell-sortable {
+    color: #000000 !important; /* Change color of sortable headers */
+}
+
+.ag-theme-alpine .ag-header-cell,
+.ag-theme-alpine .ag-cell {
+    width: 200px !important; /* Adjust the width of both header and cell */
+    min-width: 150px !important; /* Set the minimum width for columns */
+}
+
+.ag-theme-alpine .ag-header-cell {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    border-left: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.ag-theme-alpine .ag-header-cell-label {
+    font-size: 14px !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
