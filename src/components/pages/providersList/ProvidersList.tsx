@@ -54,7 +54,11 @@ const ProvidersList = () => {
     setIsEditing(false); // Reset editing state
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (
+    e:
+      | React.ChangeEvent<HTMLInputElement>
+      | { target: { name: string; value: any } }
+  ) => {
     const { name, value } = e.target;
     setEditedData((prev) => ({ ...prev, [name]: value }));
   };
