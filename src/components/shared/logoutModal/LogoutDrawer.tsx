@@ -1,12 +1,12 @@
-import React, { useContext } from "react";
-import AuthContext from "../../../contexts/authContext/authContext";
+// import React, { useContext } from "react";
+// import AuthContext from "../../../contexts/authContext/authContext";
 import { Link } from "react-router-dom";
 
 const LogoutDrawer = ({ handleClose }: any) => {
-  const { setUser } = useContext(AuthContext);
-  const logout = () => {
-    setUser(null);
-  };
+  // const { setUser } = useContext(AuthContext);
+  // const logout = () => {
+  //   setUser(null);
+  // };
   return (
     <div className="group select-none w-full flex flex-col p-4 relative items-center justify-center  border border-gray-800 shadow-lg">
       <div className="">

@@ -1,6 +1,4 @@
-import React, { useContext } from "react";
-import LoginTop from "../../loginTob/LoginTop";
-import { Avatar } from "@material-tailwind/react";
+import { useContext } from "react";
 import AuthContext from "../../../../contexts/authContext/authContext";
 
 const SideProfile = () => {

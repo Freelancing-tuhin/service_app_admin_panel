@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Button,
   Dialog,
@@ -7,16 +6,12 @@ import {
   DialogFooter,
 } from "@material-tailwind/react";
 import { ModalProps } from "../../../@types/interface/props/modalProps/ModalProps";
- const Modal =({open,handleOpen,child}:ModalProps)=> {
- 
+const Modal = ({ open, handleOpen, child }: ModalProps) => {
   return (
     <>
-      
       <Dialog open={open} handler={handleOpen}>
         <DialogHeader>Its a simple dialog.</DialogHeader>
-        <DialogBody divider>
-         {child}
-        </DialogBody>
+        <DialogBody divider>{child}</DialogBody>
         <DialogFooter>
           <Button
             variant="text"
@@ -33,5 +28,5 @@ import { ModalProps } from "../../../@types/interface/props/modalProps/ModalProp
       </Dialog>
     </>
   );
-}
+};
 export default Modal;

@@ -1,6 +1,5 @@
 import { Button, Dialog } from "@material-tailwind/react";
 import React, { useContext, useState } from "react";
-import axios from "axios";
 import { api } from "../../../../utils";
 import AuthContext from "../../../../contexts/authContext/authContext";
 import { PlusIcon } from "@heroicons/react/16/solid";

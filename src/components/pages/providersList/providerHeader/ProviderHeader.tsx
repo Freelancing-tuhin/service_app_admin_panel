@@ -6,12 +6,12 @@ import {
   Option,
   Input,
 } from "@material-tailwind/react";
-import React, { useContext, useState } from "react";
+import { useState } from "react";
 import { api } from "../../../../utils";
-import AuthContext from "../../../../contexts/authContext/authContext";
+// import AuthContext from "../../../../contexts/authContext/authContext";
 
 const ProviderHeader = ({ getAllProviders }: any) => {
-  const { user } = useContext(AuthContext);
+  // const { user } = useContext(AuthContext);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [page, setPage] = useState(1); // Tracks the current form page
   const [providerDetails, setProviderDetails] = useState({
@@ -40,8 +40,8 @@ const ProviderHeader = ({ getAllProviders }: any) => {
   const handleSubmit = async () => {
     try {
       const response = await api.providers.createProvider(
-        providerDetails,
-        user?.phone
+        providerDetails
+        // user?.phone
       );
       console.log("Provider details submitted", response);
       closeModal();

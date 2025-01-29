@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import AuthContext from "../../contexts/authContext/authContext";
 import LoginPage from "../pages/auth/loginPage/LoginPage";
 import { Outlet } from "react-router-dom";

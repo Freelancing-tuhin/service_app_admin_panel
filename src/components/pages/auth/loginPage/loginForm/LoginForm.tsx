@@ -1,9 +1,8 @@
 import React, { useContext, useState } from "react";
 import LoginTop from "../../../../shared/loginTob/LoginTop";
 import { EyeIcon, EyeSlashIcon, UserIcon } from "@heroicons/react/24/outline";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import AuthContext from "../../../../../contexts/authContext/authContext";
-import axios from "axios";
 import { api } from "../../../../../utils";
 
 const LoginForm: React.FC = () => {

@@ -1,17 +1,12 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
 import {
   Card,
   CardBody,
   CardHeader,
-  Select,
   Typography,
 } from "@material-tailwind/react";
 import Chart from "react-apexcharts";
-import {
-  ChartBarIcon,
-  PresentationChartLineIcon,
-} from "@heroicons/react/24/outline";
+import { PresentationChartLineIcon } from "@heroicons/react/24/outline";
 
 const MonthlySalesBarChart = () => {
   const [chartData, setChartData] = useState<any>({
@@ -82,7 +77,7 @@ const MonthlySalesBarChart = () => {
     },
   });
 
-  const [selectedOption, setSelectedOption] = useState("Monthly");
+  const [selectedOption] = useState("Monthly");
 
   useEffect(() => {
     const fetchData = async () => {

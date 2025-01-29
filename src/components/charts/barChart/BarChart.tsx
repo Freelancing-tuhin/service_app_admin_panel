@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
+import { useState } from "react";
 import {
   Card,
   CardBody,
@@ -10,7 +9,7 @@ import Chart from "react-apexcharts";
 import { ChartBarIcon } from "@heroicons/react/24/outline";
 
 const MonthlySalesBarChart = () => {
-  const [chartData, setChartData] = useState<any>({
+  const [chartData] = useState<any>({
     type: "bar",
     height: 300,
     series: [{ name: "Bookings", data: [50, 40, 120, 100] }],

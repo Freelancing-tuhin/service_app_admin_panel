@@ -1,22 +1,13 @@
-import React, { useEffect, useState } from "react";
+import { useEffect } from "react";
 import SmallCard from "../smallCard/SmallCard";
 import {
-  CalendarDaysIcon,
-  CalendarIcon,
   CogIcon,
   ComputerDesktopIcon,
-  CurrencyRupeeIcon,
   ExclamationTriangleIcon,
   MapPinIcon,
-  ShieldExclamationIcon,
-  ShoppingBagIcon,
-  SunIcon,
-  TruckIcon,
 } from "@heroicons/react/24/outline";
 
 const DashboardTopStats = () => {
-  const [sales, setsales] = useState<any>();
-  const [devices, setDevices] = useState<any>();
   const getAllSales = async () => {
     // const response = await getSellDetails();
     // console.log(response);

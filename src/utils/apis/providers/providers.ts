@@ -58,7 +58,7 @@ export const deleteProvider = async (phone: any,id:any) => {
   }
 };
 
-export const createProvider = async (payload: Payload,phone:any) => {
+export const createProvider = async (payload: Payload) => {
   try {
     const endpoint = `auth/provider-signup`;
     const response = await post(endpoint, payload, {

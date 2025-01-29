@@ -1,6 +1,6 @@
-import { request } from "../api";
 import { headers } from "../../../config/config";
 import { MESSAGE } from "../../../constants/api/message";
+import { request } from "../../api";
 
 const { post } = request;
 

@@ -43,6 +43,7 @@ const ProvidersList = () => {
         phone: user?.phone,
       });
       setRowData(response || []);
+      console.log(isEditing);
     } catch (error) {
       console.error(error);
       setRowData([]);
@@ -240,7 +241,7 @@ const ProvidersList = () => {
           )}
           <Button
             onClick={() => setIsDrawerOpen(false)}
-            className="mt-4 w-full bg-gray-500  rounded"
+            className="mt-4 w-full bg-gray-500 text-black rounded"
           >
             Close
           </Button>

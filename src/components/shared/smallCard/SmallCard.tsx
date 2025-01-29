@@ -1,7 +1,3 @@
-import { ShoppingBagIcon } from "@heroicons/react/24/outline";
-import { Chip } from "@material-tailwind/react";
-import React from "react";
-
 const SmallCard = ({ title, count, Icon }: any) => {
   return (
     <a className="flex flex-row items-center p-4 gap-3 w-96 2xl:w-80  transition-all duration-500 bg-white border border-indigo-100 rounded-lg shadow-md hover:shadow-xl ">

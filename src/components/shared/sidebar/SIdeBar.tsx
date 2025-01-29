@@ -5,7 +5,6 @@ import {
   BriefcaseIcon,
   BuildingOffice2Icon,
   ChatBubbleBottomCenterTextIcon,
-  InboxIcon,
   InformationCircleIcon,
   PresentationChartBarIcon,
   UserGroupIcon,
