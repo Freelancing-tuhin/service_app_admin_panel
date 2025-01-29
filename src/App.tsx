@@ -5,6 +5,7 @@ import DashBoard from "./components/pages/dashboard/DashBoard";
 import ProvidersList from "./components/pages/providersList/ProvidersList";
 import ProtectedRoute from "./components/protectedRoute/protectedRoute";
 import ServicesList from "./components/pages/servicesList/ServicesList";
+import CustomerList from "./components/pages/customerList/CustomerList";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
             <Route path="/dashboard" element={<DashBoard />} />
             <Route path="/providers" element={<ProvidersList />} />
             <Route path="/services" element={<ServicesList />} />
+            <Route path="/customers" element={<CustomerList />} />
           </Route>
 
           {/* Fallback for undefined routes */}

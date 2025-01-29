@@ -133,14 +133,9 @@ const MonthlySalesBarChart = () => {
           <PresentationChartLineIcon className="h-6 w-6" />
         </div>
         <div>
-          <select
-            value={selectedOption}
-            onChange={(e: any) => setSelectedOption(e.target.value)}
-            className="mt-2"
-          >
-            <option value="Monthly">Hetalbon Eco Resort</option>
-            {/* <option value="Weekly">Mach Ranga Chart</option> */}
-          </select>
+          <Typography variant="h6" color="blue-gray">
+            This Year Stats
+          </Typography>
         </div>
       </CardHeader>
       <CardBody className="px-2 pb-0">

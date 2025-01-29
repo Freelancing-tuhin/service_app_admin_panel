@@ -37,7 +37,7 @@ const SideBar = () => {
           <Link key={item.to} to={item.to}>
             <ListItem
               className={`text-gray-100 ${
-                location.pathname === item.to ? "bg-gray-700 font-bold" : ""
+                location.pathname === item.to ? "bg-gray-700" : ""
               }`}
             >
               <ListItemPrefix>

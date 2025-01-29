@@ -29,11 +29,11 @@ const DashboardTopStats = () => {
   };
   const rows = [
     {
-      title: "Total Bookings",
+      title: "Total Users",
       count: 5,
       icon: ComputerDesktopIcon,
     },
-    { title: "Total Income", count: "₹" + 5440, icon: MapPinIcon },
+    { title: "Total Providers", count: "" + 5440, icon: MapPinIcon },
     {
       title: "This Year Bookings",
       count: 5,

@@ -12,11 +12,11 @@ const SideProfile = () => {
           <h4 className="text-3xl text-gray-100 font-semibold">T</h4>
         </div>
         <h4 className="mx-2 mt-2 font-medium text-gray-200">
-          {user?.user_name || "Tuhin Thakur"}
+          {user?.full_name || "Tuhin Thakur"}
         </h4>
         <p className="mx-2 mt-1 text-sm font-medium text-gray-400">
-          {/* john@example.com */}
-          {user?.email || "tuhin.thakur@gmail.com"}
+          {/* john@example.com */} +91&nbsp;
+          {user?.phone || "tuhin.thakur@gmail.com"}
         </p>
       </div>
     </div>

@@ -1,5 +1,6 @@
 export const url =
-  "http://localhost:8989"
+  // "http://localhost:8989"
+  "https://service-app-server.onrender.com"
 
 export const port = "8989";
 export const version = "v1";

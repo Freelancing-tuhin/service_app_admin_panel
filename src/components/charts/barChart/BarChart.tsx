@@ -115,7 +115,7 @@ const MonthlySalesBarChart = () => {
         </div>
         <div>
           <Typography variant="h6" color="blue-gray">
-            This Year Sales
+            This Year Stats
           </Typography>
         </div>
       </CardHeader>
