@@ -164,7 +164,7 @@ const ServicesList = () => {
             onChange={handleFormChange}
             crossOrigin={undefined}
           />
-          <Button onClick={handleSubmit} className="mt-4">
+          <Button onClick={handleSubmit} className="mt-4 rounded">
             Save Changes
           </Button>
         </div>

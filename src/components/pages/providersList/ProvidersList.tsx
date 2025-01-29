@@ -2,7 +2,13 @@ import { useContext, useEffect, useState } from "react";
 import { api } from "../../../utils";
 import Layout from "../../layout/Layout";
 import AuthContext from "../../../contexts/authContext/authContext";
-import { Drawer, IconButton, Select, Option } from "@material-tailwind/react";
+import {
+  Drawer,
+  IconButton,
+  Select,
+  Option,
+  Button,
+} from "@material-tailwind/react";
 import ProviderHeader from "./providerHeader/ProviderHeader";
 import { PencilSquareIcon, TrashIcon } from "@heroicons/react/24/outline";
 import { formatDateTime } from "../../../utils/commonFunctions/dateFormater";
@@ -95,7 +101,7 @@ const ProvidersList = () => {
   return (
     <Layout>
       <div className="max-w-6xl mx-auto p-4">
-        <ProviderHeader />
+        <ProviderHeader getAllProviders={getAllProviders} />
         <div className="overflow-x-auto shadow h-96 border rounded">
           <table className="min-w-full table-auto border-collapse border border-gray-200">
             <thead>
@@ -226,21 +232,18 @@ const ProvidersList = () => {
                   onChange={handleChange}
                   className="w-full p-2 border rounded mb-4"
                 />
-                <button
-                  onClick={handleSaveChanges}
-                  className="w-full py-2 bg-green-600 text-white rounded hover:bg-green-700"
-                >
+                <Button onClick={handleSaveChanges} className=" w-full rounded">
                   Save Changes
-                </button>
+                </Button>
               </div>
             </div>
           )}
-          <button
+          <Button
             onClick={() => setIsDrawerOpen(false)}
-            className="mt-4 w-full py-2 bg-gray-500 text-white rounded hover:bg-gray-600"
+            className="mt-4 w-full bg-gray-500  rounded"
           >
             Close
-          </button>
+          </Button>
         </div>
       </Drawer>
     </Layout>

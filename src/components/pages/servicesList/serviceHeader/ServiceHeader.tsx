@@ -3,6 +3,7 @@ import React, { useContext, useState } from "react";
 import axios from "axios";
 import { api } from "../../../../utils";
 import AuthContext from "../../../../contexts/authContext/authContext";
+import { PlusIcon } from "@heroicons/react/16/solid";
 
 const ServiceHeader = ({ getAllProviders }: any) => {
   const [isModalOpen, setIsModalOpen] = useState(false); // Modal state
@@ -65,12 +66,12 @@ const ServiceHeader = ({ getAllProviders }: any) => {
       {/* Button to open the modal */}
       <Button
         onClick={openModal}
-        className=" text-white text-xs rounded  transition"
+        className=" text-white text-xs rounded flex transition items-center gap-1"
       >
+        <PlusIcon className="h-5 w-5 text-gray-50" />
         Add new service
       </Button>
 
-      {/* Modal for filling service details */}
       <Dialog
         open={isModalOpen}
         handler={setIsModalOpen}
@@ -109,18 +110,12 @@ const ServiceHeader = ({ getAllProviders }: any) => {
           </div>
 
           <div className="flex justify-end mt-6">
-            <button
-              onClick={handleSubmit}
-              className="px-4 py-2 bg-gray-800 text-white rounded hover:bg-green-700 transition"
-            >
+            <Button onClick={handleSubmit} className="rounded">
               Save Changes
-            </button>
-            <button
-              onClick={closeModal}
-              className="px-4 py-2 bg-gray-300 text-gray-800 rounded hover:bg-gray-400 transition ml-2"
-            >
+            </Button>
+            <Button onClick={closeModal} className="rounded ml-5 bg-gray-500">
               Close
-            </button>
+            </Button>
           </div>
         </div>
       </Dialog>

@@ -1,5 +1,5 @@
 import { AdminLogin } from "./apis/auth/login";
-import { deleteProvider, editProvider, getAllProviders } from "./apis/providers/providers";
+import { createProvider, deleteProvider, editProvider, getAllProviders } from "./apis/providers/providers";
 import { createService, deleteService, editService, getAllServices } from "./apis/services/service";
 
 
@@ -10,7 +10,8 @@ export const api = {
   providers:{
     getAllProviders,
     deleteProvider,
-    editProvider
+    editProvider,
+    createProvider
   },
   services:{
     getAllServices,
