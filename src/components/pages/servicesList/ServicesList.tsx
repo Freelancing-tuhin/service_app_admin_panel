@@ -3,7 +3,7 @@ import Layout from "../../layout/Layout";
 import { useContext, useEffect, useState } from "react";
 import AuthContext from "../../../contexts/authContext/authContext";
 import { api } from "../../../utils";
-import { Drawer, Button, Input } from "@material-tailwind/react";
+import { Drawer, Button, Input, IconButton } from "@material-tailwind/react";
 import { PencilSquareIcon, TrashIcon } from "@heroicons/react/24/outline";
 
 interface Provider {
@@ -119,18 +119,19 @@ const ServicesList = () => {
                     {item?.providerCount}
                   </td>
                   <td className="px-4 py-2 flex space-x-2">
-                    <button
+                    <IconButton
                       onClick={() => handleEditClick(item)}
-                      className="text-green-800"
+                      className="bg-green-50 text-green-700"
                     >
                       <PencilSquareIcon className="h-5 w-5" />
-                    </button>
-                    <button
+                    </IconButton>
+
+                    <IconButton
                       onClick={() => handleDeleteClick(item._id)}
-                      className="text-red-500"
+                      className="bg-red-50 text-red-700"
                     >
                       <TrashIcon className="h-5 w-5" />
-                    </button>
+                    </IconButton>
                   </td>
                 </tr>
               ))}
